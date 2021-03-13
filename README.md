@@ -1,17 +1,8 @@
-# PokemonTycoon
-一款用于自动化宝可梦剑盾的上位机控制程序。可以实现全自动孵蛋、放生、极巨战寻找目标、过帧、SL紫光、无限开车、合化石、挖矿、打战斗塔等操作。\
-项目整体分为两个部分：图像识别自用版，和无图像多用途发布版。\
-两个部分使用相同的固件。项目及相关的通信协议见这里：\
-https://github.com/nukieberry/SerialCon
+# EasyCon2
 
-## PokemonTycoon（宝可小管家）
-![PokemonTycoon](https://user-images.githubusercontent.com/55907281/74600748-beb8fc00-5063-11ea-986c-79b9b7fb4c7b.png)
-* 自用版，含图像处理，脚本逻辑比较复杂，外带一套截图取色工具。
-* 图像处理使用采集卡，经过OBS投屏后采集屏幕，比较绕远但在多种方式中最适合我自己。只要修改PokemonTycoon.Graphic.VideoCapture类的函数实现就能从别的渠道获取图像，不过图像和颜色可能要重新测。
-* 脚本均按自己的需求定制，支持各种复杂的参数比如孵蛋筛选表达式、极巨战目标过滤等。根据实际使用的情况也加入了各种容错判断/纠正机制。
-* 设计方向是追求强大的功能，一键操作，完全自动化且随时可以观察结果。
-  
-**（仅供参考，因为过于个人定制）**
+pc controller for [SerialCon](https://github.com/ca1e/SerialCon)
+
+fork from [EasyCon](https://github.com/nukieberry/PokemonTycoon)
 
 ## EasyCon（伊机控）
 ![EasyCon](https://user-images.githubusercontent.com/55907281/74600747-be206580-5063-11ea-8b5b-21795e7ab6cf.png)
