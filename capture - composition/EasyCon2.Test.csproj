@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>9</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Condition="'$(TargetFramework)' == 'netcoreapp3.1'" Include="Microsoft.Windows.SDK.Contracts" Version="10.0.19041.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="VideoCaptureCore">
+      <HintPath>VideoCaptureCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Composition\CompositionHost.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Composition\CompositionHostControl.cs" />
+  </ItemGroup>
+
+</Project>
